@@ -1,1 +1,1 @@
-My First Телеграм-боты на Python и AIOgram
+Учебный проект Телеграм-боты на Python и AIOgram
