@@ -55,6 +55,7 @@ ENV/
 # Current project
 experiment.py
 config.py
+.gitignore
 
 # Doc's
 docs/html
