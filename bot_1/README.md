@@ -13,9 +13,9 @@
 - updates = requests.get(f'{API_URL}{BOT_TOKEN}/getUpdates?offset={offset + 1}').json()
 
 ## main4.py
- long polling со стороны клиента
- updates = requests.get(f'{API_URL}{BOT_TOKEN}/getUpdates?offset={offset + 1}&timeout={timeout}').json()
- 0 < timeout < 100    !!!
+- long polling со стороны клиента
+- updates = requests.get(f'{API_URL}{BOT_TOKEN}/getUpdates?offset={offset + 1}&timeout={timeout}').json()
+- 0 < timeout < 100    !!!
 
 ## config.py
 в файле config.py положить токен:
