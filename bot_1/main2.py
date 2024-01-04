@@ -32,14 +32,15 @@ while 1: # counter < 100:
             chat_id = result['message']['from']['id']
             print("chat_id: ", chat_id)
 
-            if  text_message == 'стоп' or text_message == 'stop':
-                requests.get(f'{API_URL}{BOT_TOKEN}/sendMessage?chat_id={chat_id}&text={"finish..."}')
-                exit()
-            elif text_message == 'котик':
+            # if  text_message == 'стоп' or text_message == 'stop':
+                # requests.get(f'{API_URL}{BOT_TOKEN}/sendMessage?chat_id={chat_id}&text={"finish..."}')
+                # result['message']['text'] = ""
+                # exit()
+            if text_message == 'котик':
                 response = requests.get(API_CATS_URL)
                 url_link = response.json()[0]['url']
                 flag = 1
-            elif  text_message == 'песик':
+            elif  text_message == 'песик' or text_message == 'пёсик':
                 response = requests.get(API_DOGS_URL)
                 url_link = response.json()['url']
                 flag = 1
