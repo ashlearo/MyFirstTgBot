@@ -6,11 +6,11 @@
 Бот присылает картинку животного в зависимости от полученного сообщения
 
 ## main3.py
- polling со стороны клиента, то есть бота
- updates = requests.get(f'{API_URL}{BOT_TOKEN}/getUpdates?offset={offset + 1}&timeout={timeout}').json()
- timeout == 0    !!!
- или:
- updates = requests.get(f'{API_URL}{BOT_TOKEN}/getUpdates?offset={offset + 1}').json()
+- polling со стороны клиента, то есть бота
+- updates = requests.get(f'{API_URL}{BOT_TOKEN}/getUpdates?offset={offset + 1}&timeout={timeout}').json()
+- timeout == 0    !!!
+- или:
+- updates = requests.get(f'{API_URL}{BOT_TOKEN}/getUpdates?offset={offset + 1}').json()
 
 ## main4.py
  long polling со стороны клиента
